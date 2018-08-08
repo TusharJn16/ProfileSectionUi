@@ -19,7 +19,8 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="134dp"
             android:layout_height="134dp"
-            android:src="@drawable/rsvyas"
+            android:src="@drawable/model"
+            android:scaleType=""
             app:civ_border_width="20dp"
             android:translationY="-10dp"
             android:translationX="-10dp"
@@ -36,8 +37,10 @@
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_above="@id/view"
-        android:text="Tushar Anchliya Jain"
+        android:text="Miles McMillan"
         android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
         android:fontFamily="@font/googlesans"
         android:layout_toRightOf="@id/frameLayout"
         />
@@ -47,11 +50,60 @@
         android:id="@+id/view"
         android:layout_below="@id/frameLayout"/>
 
-    <android.support.v7.widget.RecyclerView
+    <View
+        android:id="@+id/view_h"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/email" />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-40dp"
-        android:layout_below="@id/view"/>
-
-
+        android:layout_below="@id/view"
+        android:gravity="center_horizontal"
+        android:text="Miles McMillan"
+        android:id="@+id/name"
+        android:textStyle="bold"
+        android:layout_marginTop="-20dp"
+        android:textSize="26sp"
+        android:fontFamily="@font/googlesans"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:id="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:text="miles_mcmillan@gmail.com"
+        android:fontFamily="@font/googlesans"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/email"
+        android:layout_toRightOf="@id/view_h"
+        android:id="@+id/dob"
+        android:textSize="16sp"
+        android:text="November,14,1990"
+        android:fontFamily="@font/googlesans"
+        android:drawableLeft="@drawable/ic_card_giftcard_black_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_toRightOf="@id/view_h"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:gravity=""
+        android:text="male"
+        android:fontFamily="@font/googlesans"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp" />
 </RelativeLayout>
