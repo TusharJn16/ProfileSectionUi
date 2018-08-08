@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout">
+
+        <View
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:translationY="-47dp"
+            android:translationX="-47dp"
+            android:background="@drawable/circle" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:src="@drawable/rsvyas"
+            app:civ_border_width="20dp"
+            android:translationY="-10dp"
+            android:translationX="-10dp"
+            app:civ_border_color="#512da8"
+            />
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginLeft="-28dp"
+        android:layout_marginTop="-58dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/view"
+        android:text="Tushar Anchliya Jain"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/googlesans"
+        android:layout_toRightOf="@id/frameLayout"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/view"
+        android:layout_below="@id/frameLayout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:layout_below="@id/view"/>
+
+
+</RelativeLayout>
